@@ -59,3 +59,15 @@ if (backToTopBtn) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
+// Theme Toggle Logic
+const themeToggles = document.querySelectorAll(".theme-toggle");
+if (themeToggles.length > 0) {
+  themeToggles.forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark-theme");
+      const isDark = document.documentElement.classList.contains("dark-theme");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+  });
+}

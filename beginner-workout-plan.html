@@ -19,11 +19,24 @@
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"Article","headline":"4-Week Beginner Workout Plan","author":{"@type":"Organization","name":"HabitFit"},"publisher":{"@type":"Organization","name":"HabitFit"},"mainEntityOfPage":"https://ayushmishra-02.github.io/HabitFit/beginner-workout-plan.html","description":"A simple 4-week beginner workout plan with strength, mobility, walking, rest days, warm-ups, and progression tips."}
     </script>
+    <script>
+      if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-theme');
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="index.html"><span class="brand-mark">H</span><span>HabitFit</span></a>
-      <nav class="site-nav" aria-label="Primary navigation"><a href="index.html#plan">Plan</a><a href="index.html#workouts">Workouts</a><a href="nutrition-for-beginners.html">Nutrition</a></nav>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#plan">Plan</a>
+        <a href="index.html#workouts">Workouts</a>
+        <a href="nutrition-for-beginners.html">Nutrition</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </nav>
       <a class="nav-action" href="index.html">Home</a>
     </header>
     <main class="article-layout">
