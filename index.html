@@ -3,131 +3,177 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HabitFit: Fitness for Beginners | Simple Workouts, Plans, and Nutrition</title>
-    <meta name="description" content="HabitFit helps beginners start fitness with simple workouts, weekly plans, habit tracking, warm-ups, recovery tips, and no-intimidation nutrition guidance.">
-    <meta name="keywords" content="fitness for beginners, beginner workout plan, at home workout, start fitness, beginner strength training, beginner nutrition">
+    <title>HabitFit | Beginner Fitness Plan, Home Workouts, and Healthy Habits</title>
+    <meta name="description" content="HabitFit is a professional beginner fitness guide with a 4-week workout plan, at-home exercises, nutrition basics, habit tracking, recovery tips, and measurable fitness outcomes.">
+    <meta name="keywords" content="beginner fitness plan, fitness for beginners, at home workouts for beginners, 4 week beginner workout plan, healthy habits, beginner nutrition, bodyweight workout">
     <meta name="author" content="HabitFit">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#165536">
     <link rel="canonical" href="https://ayushmishra-02.github.io/HabitFit/">
-    <meta property="og:title" content="HabitFit: Fitness for Beginners">
-    <meta property="og:description" content="A calm, practical starter guide for building strength, confidence, and consistency.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="HabitFit: Beginner Fitness Plan and Healthy Habit Tracker">
+    <meta property="og:description" content="Build strength, mobility, confidence, and consistency with beginner workouts, practical nutrition, and simple weekly habits.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ayushmishra-02.github.io/HabitFit/">
     <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "HabitFit",
-        "url": "https://ayushmishra-02.github.io/HabitFit/",
-        "description": "Fitness for beginners with simple workout plans, habit tracking, and nutrition basics.",
-        "publisher": {"@type": "Organization", "name": "HabitFit"}
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How many days a week should a beginner exercise?", "acceptedAnswer": {"@type": "Answer", "text": "Most beginners do well with three structured workout days per week plus easy walking or mobility on off days."}},
-          {"@type": "Question", "name": "Do beginners need a gym?", "acceptedAnswer": {"@type": "Answer", "text": "No. Beginners can build strength and fitness at home with bodyweight movements, a chair, and optional resistance bands."}},
-          {"@type": "Question", "name": "What should beginners eat before working out?", "acceptedAnswer": {"@type": "Answer", "text": "A light meal or snack with carbohydrates and some protein, eaten one to three hours before training, works well for many beginners."}}
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://ayushmishra-02.github.io/HabitFit/#organization",
+            "name": "HabitFit",
+            "url": "https://ayushmishra-02.github.io/HabitFit/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://ayushmishra-02.github.io/HabitFit/#website",
+            "name": "HabitFit",
+            "url": "https://ayushmishra-02.github.io/HabitFit/",
+            "publisher": {"@id": "https://ayushmishra-02.github.io/HabitFit/#organization"},
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://ayushmishra-02.github.io/HabitFit/#webpage",
+            "url": "https://ayushmishra-02.github.io/HabitFit/",
+            "name": "HabitFit Beginner Fitness Plan",
+            "description": "Beginner fitness plan with home workouts, nutrition basics, habit tracking, recovery guidance, and outcome-focused training.",
+            "isPartOf": {"@id": "https://ayushmishra-02.github.io/HabitFit/#website"},
+            "about": ["beginner fitness", "at-home workouts", "healthy habits", "nutrition for beginners"],
+            "inLanguage": "en"
+          },
+          {
+            "@type": "ItemList",
+            "name": "HabitFit Beginner Fitness Outcomes",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Build weekly exercise consistency"},
+              {"@type": "ListItem", "position": 2, "name": "Learn safe beginner strength movements"},
+              {"@type": "ListItem", "position": 3, "name": "Improve mobility and recovery habits"},
+              {"@type": "ListItem", "position": 4, "name": "Understand simple nutrition for training"}
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {"@type": "Question", "name": "How many days a week should a beginner exercise?", "acceptedAnswer": {"@type": "Answer", "text": "Most beginners do well with three structured workout days per week plus easy walking or mobility on off days."}},
+              {"@type": "Question", "name": "Do beginners need a gym?", "acceptedAnswer": {"@type": "Answer", "text": "No. Beginners can build strength and fitness at home with bodyweight movements, a chair, and optional resistance bands."}},
+              {"@type": "Question", "name": "What outcomes should a beginner track?", "acceptedAnswer": {"@type": "Answer", "text": "Track consistency, energy, movement confidence, basic strength progress, mobility, sleep, and recovery before chasing advanced metrics."}}
+            ]
+          }
         ]
       }
     </script>
   </head>
   <body>
-    <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <header class="site-header glass-shell">
       <a class="brand" href="index.html" aria-label="HabitFit home"><span class="brand-mark">H</span><span>HabitFit</span></a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#plan">Plan</a>
-        <a href="#workouts">Workouts</a>
-        <a href="#nutrition">Nutrition</a>
-        <a href="#faq">FAQ</a>
+        <a href="#plan" data-nav-link>Plan</a>
+        <a href="#outcomes" data-nav-link>Outcomes</a>
+        <a href="#workouts" data-nav-link>Workouts</a>
+        <a href="#nutrition" data-nav-link>Nutrition</a>
+        <a href="#faq" data-nav-link>FAQ</a>
       </nav>
       <a class="nav-action" href="beginner-workout-plan.html">Start Plan</a>
     </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
+    <main id="main">
+      <section class="hero section-anchor" aria-labelledby="hero-title">
         <div class="hero-media" role="img" aria-label="Beginner strength workout setup with dumbbells and a training mat"></div>
-        <div class="hero-content">
+        <div class="hero-content glass-panel" data-reveal>
           <p class="eyebrow">Fitness for Beginners</p>
           <h1 id="hero-title">HabitFit</h1>
-          <p class="hero-copy">A simple, low-pressure way to begin exercising: clear workouts, realistic weekly structure, and nutrition basics that do not ask you to become a different person overnight.</p>
+          <p class="hero-copy">A polished beginner fitness system for people who want structure without intimidation: simple workouts, weekly habit tracking, recovery guidance, and realistic nutrition basics.</p>
           <div class="hero-actions">
             <a class="primary-button" href="beginner-workout-plan.html">Follow the 4-week plan</a>
-            <a class="secondary-button" href="#workouts">Browse workouts</a>
+            <a class="secondary-button" href="#outcomes">View outcomes</a>
           </div>
           <dl class="hero-stats">
-            <div><dt>20-35 min</dt><dd>Beginner sessions</dd></div>
-            <div><dt>3 days</dt><dd>Weekly structure</dd></div>
-            <div><dt>0 gym</dt><dd>Required to start</dd></div>
+            <div><dt>4 weeks</dt><dd>Structured starter block</dd></div>
+            <div><dt>3 days</dt><dd>Weekly training rhythm</dd></div>
+            <div><dt>Home first</dt><dd>Gym optional</dd></div>
           </dl>
         </div>
       </section>
 
       <section class="trust-band" aria-label="HabitFit benefits">
-        <p>Built for first-timers</p>
-        <p>Home and gym options</p>
-        <p>Progress without burnout</p>
-        <p>SEO-ready content hub</p>
+        <p>Beginner-safe workouts</p><p>Measurable habit outcomes</p><p>Glassmorphism UI</p><p>SEO content architecture</p>
       </section>
 
-      <section id="plan" class="section split-section">
-        <div>
-          <p class="eyebrow">Start Here</p>
+      <section id="plan" class="section split-section section-anchor">
+        <div data-reveal>
+          <p class="eyebrow">4-Week Foundation</p>
           <h2>Your first month, made practical</h2>
-          <p>HabitFit uses a three-day weekly rhythm: strength, movement, and full-body practice. Each week adds just enough challenge to help you feel progress without burying you in complicated rules.</p>
+          <p>HabitFit uses a three-day rhythm: full-body strength, mobility and core, then full-body practice again. The plan is designed around consistency, safe movement patterns, and progressive confidence.</p>
           <a class="text-link" href="beginner-workout-plan.html">See the full beginner workout plan</a>
         </div>
         <div class="timeline" aria-label="Four week starter roadmap">
-          <article><span>Week 1</span><h3>Learn the moves</h3><p>Short sets, slow tempo, and form cues for squats, hinges, pushes, pulls, and core basics.</p></article>
-          <article><span>Week 2</span><h3>Build consistency</h3><p>Repeat the same movement patterns and add a little more walking or mobility.</p></article>
-          <article><span>Week 3</span><h3>Add challenge</h3><p>Use extra reps, longer holds, or light resistance while keeping recovery in view.</p></article>
-          <article><span>Week 4</span><h3>Review progress</h3><p>Check energy, confidence, and strength before choosing the next training block.</p></article>
+          <article class="glass-card" data-reveal><span>Week 1</span><h3>Learn the moves</h3><p>Short sets, slow tempo, and form cues for squats, hinges, pushes, pulls, and core basics.</p></article>
+          <article class="glass-card" data-reveal><span>Week 2</span><h3>Build consistency</h3><p>Repeat the same movement patterns and add easy walking or mobility on off days.</p></article>
+          <article class="glass-card" data-reveal><span>Week 3</span><h3>Add challenge</h3><p>Use extra reps, longer holds, or light resistance while keeping recovery in view.</p></article>
+          <article class="glass-card" data-reveal><span>Week 4</span><h3>Review progress</h3><p>Check energy, confidence, strength, and habit streaks before choosing the next block.</p></article>
         </div>
       </section>
 
-      <section id="workouts" class="section">
-        <div class="section-heading">
+      <section id="outcomes" class="section outcomes-section section-anchor">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Subject Outcomes</p>
+          <h2>What beginners should actually gain</h2>
+          <p>The site is organized around outcomes that matter for new exercisers: movement literacy, confidence, consistency, nutrition awareness, and recovery habits.</p>
+        </div>
+        <div class="outcome-grid">
+          <article class="glass-card" data-reveal><strong>01</strong><h3>Movement literacy</h3><p>Understand the basic squat, hinge, push, pull, carry, brace, and lunge patterns.</p></article>
+          <article class="glass-card" data-reveal><strong>02</strong><h3>Weekly consistency</h3><p>Build a repeatable three-day training rhythm with visible habit feedback.</p></article>
+          <article class="glass-card" data-reveal><strong>03</strong><h3>Recovery awareness</h3><p>Use soreness, sleep, energy, and mobility as signals for smarter progression.</p></article>
+          <article class="glass-card" data-reveal><strong>04</strong><h3>Food confidence</h3><p>Apply simple plate-building, hydration, and workout-fuel basics without extreme dieting.</p></article>
+        </div>
+      </section>
+
+      <section id="workouts" class="section section-anchor">
+        <div class="section-heading" data-reveal>
           <p class="eyebrow">Workouts</p>
           <h2>Beginner sessions that fit real life</h2>
           <p>Choose the session that matches your day. Every workout includes a warm-up, simple main work, and a short cooldown.</p>
         </div>
         <div class="workout-grid">
-          <article class="workout-card"><img src="https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=900&q=80" alt="Person doing a bodyweight exercise on a mat"><div><p class="tag">No equipment</p><h3>20-minute at-home workout</h3><p>Squats, incline push-ups, glute bridges, dead bugs, and a gentle finisher.</p><a href="at-home-workouts.html">Open workout</a></div></article>
-          <article class="workout-card"><img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=900&q=80" alt="Dumbbells arranged on a gym floor"><div><p class="tag">Strength</p><h3>Beginner dumbbell circuit</h3><p>A friendly introduction to resistance training with light weights and clear rest periods.</p><a href="beginner-workout-plan.html#strength">Open circuit</a></div></article>
-          <article class="workout-card"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80" alt="Person stretching in a bright room"><div><p class="tag">Recovery</p><h3>Mobility reset</h3><p>Ten calm minutes for hips, shoulders, breathing, and post-workout recovery.</p><a href="at-home-workouts.html#mobility">Open reset</a></div></article>
+          <article class="workout-card glass-card" data-reveal><img src="https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=900&q=80" alt="Person doing a bodyweight exercise on a mat" loading="lazy"><div><p class="tag">No equipment</p><h3>20-minute at-home workout</h3><p>Squats, incline push-ups, glute bridges, dead bugs, and a gentle finisher.</p><a href="at-home-workouts.html">Open workout</a></div></article>
+          <article class="workout-card glass-card" data-reveal><img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=900&q=80" alt="Dumbbells arranged on a gym floor" loading="lazy"><div><p class="tag">Strength</p><h3>Beginner dumbbell circuit</h3><p>A friendly introduction to resistance training with light weights and clear rest periods.</p><a href="beginner-workout-plan.html#strength">Open circuit</a></div></article>
+          <article class="workout-card glass-card" data-reveal><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80" alt="Person stretching in a bright room" loading="lazy"><div><p class="tag">Recovery</p><h3>Mobility reset</h3><p>Ten calm minutes for hips, shoulders, breathing, and post-workout recovery.</p><a href="at-home-workouts.html#mobility">Open reset</a></div></article>
         </div>
       </section>
 
-      <section id="nutrition" class="section nutrition-band">
-        <div><p class="eyebrow">Nutrition Basics</p><h2>Eat to support the habit</h2><p>Beginners do not need extreme diets. Start with balanced plates, enough water, protein at each meal, and a snack strategy for workout days.</p></div>
+      <section id="nutrition" class="section nutrition-band section-anchor">
+        <div data-reveal><p class="eyebrow">Nutrition Basics</p><h2>Eat to support the habit</h2><p>Beginners do not need extreme diets. Start with balanced plates, enough water, protein at each meal, and a snack strategy for workout days.</p></div>
         <div class="nutrition-list">
-          <article><h3>Plate method</h3><p>Half colorful plants, one quarter protein, one quarter carbs, plus a thumb-sized fat.</p></article>
-          <article><h3>Workout fuel</h3><p>Use familiar foods: yogurt and fruit, toast with eggs, oats, rice bowls, or a smoothie.</p></article>
-          <article><h3>Recovery</h3><p>Prioritize sleep, hydration, and a protein-rich meal within a few hours after training.</p></article>
+          <article class="glass-card" data-reveal><h3>Plate method</h3><p>Half colorful plants, one quarter protein, one quarter carbs, plus a thumb-sized fat.</p></article>
+          <article class="glass-card" data-reveal><h3>Workout fuel</h3><p>Use familiar foods: yogurt and fruit, toast with eggs, oats, rice bowls, or a smoothie.</p></article>
+          <article class="glass-card" data-reveal><h3>Recovery</h3><p>Prioritize sleep, hydration, and a protein-rich meal within a few hours after training.</p></article>
         </div>
       </section>
 
       <section class="section tools-section" aria-labelledby="tracker-title">
-        <div class="section-heading"><p class="eyebrow">Interactive Tool</p><h2 id="tracker-title">Tiny habit tracker</h2><p>Mark each day you move. The goal is momentum, not perfection.</p></div>
-        <div class="tracker" id="tracker" aria-label="Seven day movement tracker">
-          <button type="button" aria-pressed="false">Mon</button><button type="button" aria-pressed="false">Tue</button><button type="button" aria-pressed="false">Wed</button><button type="button" aria-pressed="false">Thu</button><button type="button" aria-pressed="false">Fri</button><button type="button" aria-pressed="false">Sat</button><button type="button" aria-pressed="false">Sun</button>
+        <div class="section-heading" data-reveal><p class="eyebrow">Interactive Tool</p><h2 id="tracker-title">Habit tracker with weekly feedback</h2><p>Mark each day you move. Your progress saves in this browser, so the tracker feels useful when you return.</p></div>
+        <div class="tracker glass-card" id="tracker" aria-label="Seven day movement tracker" data-reveal>
+          <button type="button" aria-pressed="false" data-day="Mon">Mon</button><button type="button" aria-pressed="false" data-day="Tue">Tue</button><button type="button" aria-pressed="false" data-day="Wed">Wed</button><button type="button" aria-pressed="false" data-day="Thu">Thu</button><button type="button" aria-pressed="false" data-day="Fri">Fri</button><button type="button" aria-pressed="false" data-day="Sat">Sat</button><button type="button" aria-pressed="false" data-day="Sun">Sun</button>
         </div>
         <p class="tracker-result" id="tracker-result">0 of 7 days marked. Pick one easy win.</p>
       </section>
 
-      <section id="faq" class="section faq-section">
-        <div class="section-heading"><p class="eyebrow">FAQ</p><h2>Beginner fitness questions</h2></div>
-        <details><summary>How sore should I be after a beginner workout?</summary><p>Mild soreness can happen, but severe soreness is not the goal. Keep your first sessions easy enough that you can train again in a day or two.</p></details>
-        <details><summary>Should I do cardio or strength first?</summary><p>If your goal is general fitness, either can work. HabitFit begins with strength three times per week and adds walking because that combination is simple and sustainable.</p></details>
-        <details><summary>What if I miss a workout?</summary><p>Resume with the next planned session. Avoid doubling up as punishment; consistency grows faster when missed days are handled calmly.</p></details>
+      <section id="faq" class="section faq-section section-anchor">
+        <div class="section-heading" data-reveal><p class="eyebrow">FAQ</p><h2>Beginner fitness questions</h2></div>
+        <details class="glass-card" data-reveal><summary>How sore should I be after a beginner workout?</summary><p>Mild soreness can happen, but severe soreness is not the goal. Keep your first sessions easy enough that you can train again in a day or two.</p></details>
+        <details class="glass-card" data-reveal><summary>Should I do cardio or strength first?</summary><p>If your goal is general fitness, either can work. HabitFit begins with strength three times per week and adds walking because that combination is simple and sustainable.</p></details>
+        <details class="glass-card" data-reveal><summary>What if I miss a workout?</summary><p>Resume with the next planned session. Avoid doubling up as punishment; consistency grows faster when missed days are handled calmly.</p></details>
       </section>
     </main>
 
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
     <footer class="site-footer">
       <div><a class="brand" href="index.html"><span class="brand-mark">H</span><span>HabitFit</span></a><p>Beginner fitness without the noise.</p></div>
       <nav aria-label="Footer navigation"><a href="beginner-workout-plan.html">Workout Plan</a><a href="at-home-workouts.html">At-Home Workouts</a><a href="nutrition-for-beginners.html">Nutrition</a><a href="sitemap.xml">Sitemap</a></nav>
