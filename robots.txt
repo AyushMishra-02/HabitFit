@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayushmishra-02.github.io/HabitFit/sitemap.xml
