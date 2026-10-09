@@ -25,3 +25,37 @@ if (tracker && result) {
     });
   });
 }
+
+// Scroll Reveal Animations
+const revealElements = document.querySelectorAll("[data-reveal]");
+
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("revealed");
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  root: null,
+  threshold: 0.15,
+  rootMargin: "0px 0px -50px 0px"
+});
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Back to Top Button
+const backToTopBtn = document.querySelector(".back-to-top");
+if (backToTopBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopBtn.classList.add("visible");
+    } else {
+      backToTopBtn.classList.remove("visible");
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
