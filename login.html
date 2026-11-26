@@ -47,7 +47,7 @@
             <p>Sign in to continue your fitness journey</p>
           </div>
           
-          <form class="login-form" action="#" method="POST">
+          <form class="login-form" id="login-form">
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="email" placeholder="you@example.com" required>
@@ -67,6 +67,7 @@
             </div>
             
             <button type="submit" class="primary-button full-width">Sign In</button>
+            <p id="login-status" aria-live="polite" style="margin-top: 0.75rem; font-size: 0.9rem; text-align: center;"></p>
           </form>
           
           <div class="login-footer">

@@ -71,3 +71,24 @@ if (themeToggles.length > 0) {
     });
   });
 }
+
+// Client-side Login Form Handler (prevents HTTP 405 POST on static hosts)
+const loginForm = document.querySelector("#login-form");
+if (loginForm) {
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const emailInput = loginForm.querySelector("#email");
+    const statusEl = document.querySelector("#login-status");
+    const email = emailInput ? emailInput.value.trim() : "";
+    if (email) {
+      localStorage.setItem("habitfit_user", email);
+    }
+    if (statusEl) {
+      statusEl.style.color = "#10b981";
+      statusEl.textContent = "Signed in! Redirecting to your HabitFit plan...";
+    }
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 800);
+  });
+}
